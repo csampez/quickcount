@@ -1,0 +1,375 @@
+\documentclass[]{article}
+\usepackage{lmodern,booktabs}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Diseño Muestral para la Elección Federal 2024 Cámara de Senadores},
+            pdfauthor={Luis E. Nieto, Carlos S. Pérez @ COTECORA},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Diseño Muestral para la Elección Federal 2024 Cámara de Senadores}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Luis E. Nieto, Carlos S. Pérez  @ COTECORA}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{Febrero, 2024}
+
+\usepackage{float}
+\usepackage{morefloats}
+%\usepackage{babel}[spanish]
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{subfig}
+\usepackage{rotating}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+%\usepackage[•]{•}
+%\usepackage[margin=0.5in,bottom=1in,top=2in]{geometry}
+
+\pagestyle{fancy}
+%\fancyh{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{1pt}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\lhead{\includegraphics[width = .3\textwidth, height = .0375\textheight]{figs/cotecora.png}}
+\rhead{\includegraphics[width = .3\textwidth, height = .0375\textheight]{figs/INELogo.png}}
+
+%\rfoot{\includegraphics[width = 1.0\textwidth]{../img/foot.png}}
+\pagenumbering{arabic} 
+
+\renewcommand\figurename{Figura}
+\renewcommand\tablename{Tabla}
+
+
+\begin{document}
+\maketitle
+\baselineskip=18pt
+
+\hypertarget{intro}{%
+\section{Introducción}
+\label{intro}}
+
+Para el diseño muestral de la elección federal del 2024 nos basaremos en los resultados de la elección federal del 2018. Consideramos que la elección federal del 2018 presenta retos importantes que deben de ser tomados en cuenta en el diseño para el 2024. Por otro lado, la elección federal más reciente, la del 2018, fue una elección dominada por un solo partido mayoritario, por lo que presenta menos retos metodológicos.
+
+Las elecciones federales de México de 2018, denominadas oficialmente por la autoridad electoral como el Proceso Electoral Federal 2024 - 2018, fueron las elecciones intermedias llevadas a cabo en México el 7 de junio de 2018 para la elección de 128 miembros de la cámara de senadores federales. Debido a la reforma electoral de 2024, en estas elecciones se eligieron simultáneamente los puestos a cargos federales y locales en 17 entidades del país.
+
+Los cargos renovados después de la jornada electoral el 7 de junio de 2018 son: 128 senadores federales al Congreso de la Unión, 300 de los cuales serán electos por mayoría simple en cada uno de los distritos electorales en que se divide el país, y los 200 restantes mediante el principio de representación proporcional al ser votados en listas en cada una de las cinco circunscripciones electorales que integran al país. Estos cargos constituyeron, a partir del 1 de septiembre del 2018, la LXIII Legislatura del Congreso de la Unión de México.
+
+El número de escaños obtenidos oficialmente por cada uno de los partidos políticos se presenta en la Figura \ref{fig:resultados2018}. 
+
+\hypertarget{metodologia}{%
+\section{Metodología}
+\label{metodologia}}
+
+El problema de estimación de la conformación de la cámara, desde un punto de vista estadístico, requiere de hacer estimaciones a dos niveles: primero, a nivel de cada uno de los 300 distritos federales, para los senadores elegidos por mayoría simple; y en segundo lugar, a nivel nacional para la determinación de los 200 senadores por representación proporcional. Para el primer caso, se necesita tener representación muestral a nivel distrito federal, y para el segundo, se necesita tener representación a nivel nacional. Es por esto que el diseño muestral más apropiado para el problema en cuestión es un muestreo aleatorio estrafificado por distrito federal. 
+
+El reglamento de elecciones en sus artículos 413 y 414 establece los principios para la determinación de los senadores electos por mayoría relativa, y el artículo 415 junto cos sus anexos 420, 421 y 422 establecen los principios para la elección de senadores por representación proporcional. 
+
+Aunque los criterios se basan en la votación total y los votos por partido, es posible representar los criterios en términos de las proporciones de votos. Para este efecto introducimos la siguiente notación. 
+
+Sea $\theta_{i,j}$ la proporción de votos, relativa al listado nominal, a favor del candidato/partido $j$ en el estrato (distrito) $i$, con $j=1,\ldots,J$ e $i=1,\ldots,N$. $J$ es el número total de candidatos (que incluye a los candidatos por partido político y los independientes) más dos categorías extras: los votos nulos y no registrados y las abstenciones. $N=32$ es el número de estratos (estados). Sea $n_i$ el listado nominal de votantes en el distrito $i$ para $i=1,\ldots,N$, y $n=\sum_{i=1}^N n_i$ el tamaño de la lista nominal nacional. Entonces $\theta_j=\sum_{i=1}^N\frac{n_i}{n}\theta_{i,j}$ es la proporción de votos, relativa al listado nominal, a favor del candidato $j$ a nivel nacional. 
+
+Para la determinación de los senadores ganadores por mayoría relativa definimos 
+
+\[ mr_{i,j}= \begin{cases} 
+	1, & \text{ si } \theta_{i,j}>\theta_{i,l}, l\neq j, l=1,\ldots,J-2 \\
+	0, & \text{ en otro caso }
+   \end{cases}
+\]
+
+una indicadora que nos dice si el candidato $j$ ganó o no en el distrito $i$. Finalmente, definimos $mr_j=\sum_{i=1}^N mr_{i,j}$ como el número de diputaciones ganadas por el partido $j$ por el principio de mayoría relativa. 
+
+Para la determinación de senadores ganadores por representación proporcional defininimos primero $\lambda_j=\theta_j/\sum_{l=1}^{J-2}\theta_l$ la proporción de votos válidos (se excluyen las abstenciones), y $\eta_j=\theta_j/\sum_{l=1}^{J-3}\theta_l I(\lambda_j>0.03)$ como la proporción después de excluir a los partidos que no alcanzan el 3\% en la votación válida, los independientes y los nulos y no registrados. El algoritmo iterativo consiste en calcular primero $rp_{j}=\lfloor{200\eta_j}\rfloor$ los curules por representación proporcional cruda para el partido $j$ y se ajusta de acuerdo a la sobrerepresentación, i.e., si $mr_j+rp_j>\lfloor{128(\eta_j+0.08)}\rfloor$ entonces $rp_j^*=\lfloor{128(\eta_j+0.08)}\rfloor-mr_j$. Posteriormente se calculan los decimales remanentes $200\eta_j-rp_j$ y se ordenan de mayor a menor y se les asigna una diputaci\'on m\'as a cada uno hasta completar 200.  
+
+Finalmente, el número de escaños por partido político $NE_j$ resulta de sumar los escaños por mayoría relativa $mr_j$ y los de representación proporcional $rp_j^*$. Es decir, $NE_j=mr_j+rp_j^*$. 
+
+Para la estimación de los parámetros antes descritos, y en particular para estimar $\theta_{i,j}$, usaremos un enfoque bayesiano. En específico usaremos el modelo propuesto por Mendoza y Nieto-Barajas (2016) \footnote{Mendoza, M. y Nieto-Barajas L.E. (2016). Quick  counts  in  the  Mexican  presidential  elections:  A Bayesian approach. \textit{Electoral Studies} \textbf{43}, 124--132.}.
+
+Dicho modelo supone que \(X_{ij}^k\), denota los votos a favor del partido/candidato $j$ en el estrato \(i\) en la casilla \(k\). Esta variable observable sigue un comportamiento descrito por la distribución siguiente
+
+\begin{equation}
+X_{ij}^k | \theta_{ij}, \tau_{ij} \sim N \left( n_{i}^k\theta_{ij},  \frac{\tau_{ij}}{n^k_{i}} \right)
+\end{equation}
+
+con \(k= 1, ..., c_i\), con \(c_i\) casillas en muestra en el distrito \(i\), \(i = 1, ..., N\), y \(j=1, ..., J\). Donde $n_i^k$ es la lista nominal para la casilla \(k\) en el distrito \(i\) y \(\tau_{ij}\) es la precisión que se supone constante dentro del estrato e independiente de \(\theta_{ij}\), más aún \(X_{ij}^k\) independiente \(X_{ij'}^k\) para \(j \neq j'\).
+
+La verosimilitud para cada estrato \(i=1, ..., N\) y cada candidato \(j=1, ..., J\) está dada por
+
+\begin{equation}
+L(\theta_{ij}, \tau_{ij} | \mathbf{x}_{ij}) \propto \tau_{ij}^{c_i/2} \exp \left\{ -\frac{\tau_{ij}}{2} \sum_{k=1}^{c_i} \frac{1}{n_i^k}(x_{ij}^k - n^k_i \theta_{ij})^2 \right\}
+\end{equation}
+
+La distribución inicial para los parámetros desconocidos del modelo, $\theta_{i,j}$ y $\tau_{i,j}$ se considera no informativa y toma la forma
+
+\begin{equation}
+p(\theta_{ij}, \tau_{ij}) \propto \tau_{ij}^{-1}I(\tau_{ij}>0) I(0 < \theta_{ij} < 1)
+\end{equation}
+
+donde \(I(A)\) denota la función indicadora para el conjunto A.
+
+Así, usando el Teorema de Bayes, la distribución posterior resulta ser proporcional al producto de una normal truncada para \(\theta_{ij}\) condicional en \(\tau_{ij}\) y una distribución gama para \(\tau_{ij}\). Los estimadores puntuales y por intervalo para $\theta_{i,j}$ se aproximarán mediante simulaciones de la distribución posterior. 
+
+
+\hypertarget{diseno-muestral}{%
+\section{Determinación del tamaño de muestra y error de estimación}\label{diseno-muestral}}
+
+Como ya se mencionó, el diseño muestral estará basado en un muestreo estratificado por entidad federativa. Para la determinación del tamaño de muestra y de los errores de estimación alcanzados con cada tamaño, nos basaremos en un estudio de simulación. 
+
+Se generarán 1,000 muestras aleatorias estratificadas de casillas de tamaños 320, 640, 1280, 1920, 2560, 3200, y 3,840 que divididas entre los 32 entidades electorales equivalen a 10, 20, 40, 60, 80, 100 y 120 casillas por estrato.
+
+Para cada muestra se estimarán los parámetros $\theta_{i,j}$ de manera bayesiana y se obtendrán 10,000 realizaciones de la distribución posterior. Para cada una de estas realizaciones calculamos el número de escaños $NE_j$. Suponiendo una función de pérdida valor obsoluto, estimamos $NE_j$ mediante la mediana posterior a la que denotaremos por $\widehat{NE}_j$.
+
+Definimos el error de estimación como el número de escaños mal asignados por partido $NEMA_j=\lvert{\dot{NE}_j-\widehat{NE}_j}\rvert$, donde $\dot{NE}_j$ es el valor oficial de escaños obtenidos por el partido $j$ descrito en la Figura \ref{fig:resultados2018}. Resumimos el error de estimación en la conformación de toda la cámara mediante dos medidas: el promedio de escaños mal asignados $PEMA = \frac{1}{J-2} \sum_{j=1}^{J-2}NEMA_j $; y el máximo de escaños mal asignados $MEMA = \max_{\{j=1,\ldots,J-2\}}{NEMA_j}$. 
+
+
+%\hypertarget{resultados}{%
+%\subsection{Resultados}\label{resultados}}
+
+%La distribución de los 1000 cuantiles 50\% para \(NEMA\) se muestra a continuación así como las distribuciones de los `residuales' \(NEMA_j\) para cada partido, para que a través de esta comparación se pueda revisar el diseño muestral para los distintos tamaños de muestra.
+
+Los resultados del ejercicio de simulación se muestran a continuación. La Figura \ref{fig:nemaj} contiene histogramas para los 1,000 valores de los errores de estimación por partido $NEMA_j$. Notamos que el partido con mayor variabilidad es el PRI con errores de hasta 6 escaños, seguido de PRD y PAN con errores de hasta 4 y 2 escaños respectivamente. Los demás partidos presentan muy poca variabilidad con errores alrededor de cero. Recordemos que el indicador $NEMA_j$ se basa en el estimador puntual $\widehat{NE}_j$, sin embargo, en la práctica no se reportará el estimador puntual sino un intervalo de credibilidad al 95\%. Comparando la distribución muestral de los errores por partido en los distintos tamaños de muestra, se aprecia un decremento en la variabilidad de los errores para el tamaño de muestra mayores, no obstante para los tamaños de muestra mayores a 1920 no se aprecian diferencias considerables entre las distribuciones.
+
+%Una aclaración importante aquí es el hecho de que el partido del trabajo (PT), corrrespondiente a $j=5$, está en el límite de perder el registro, de hecho lo perdió y luego lo recuperó. Esto hace que para algunas muestras y para algunas realizaciones de la distribución posterior de $\lambda_5$, el PT a veces tenga o no tenga asignación de escaños por el principio de representación proporcional. En consecuencia, el indicador $NEMA_j$ para algunos partidos como el PAN, MORENA y PRD toman valores más grandes que para otros partidos. 
+
+Al promediar todos los errores de estimación de todos los partidos, la Figura \ref{fig:pema} muestra las distribuciones muestrales (histogramas de los 1,000 valores) de los errores promedios de la cámara $PEMA$. No se observa un cambio en la dispersión de las distribuciones del error promedio al aumentar el tamaño de muestra. La distribución muestral con 640 casillas es más dispersa que la que se obtiene con 3,840 casillas que está muy concentrada en el valor de 0. 
+
+%Comparando las modas de las distribuciones, practicamente con 4,128 casillas y hasta 9,000 la moda se encuentra en un escaños de error. En cambio, la moda cuando se tienen muestras de 3,000 casillas se encuentra compartida por los valores de uno y dos escaños de error. 
+
+Para una mejor comparación entre las distribuciones, el Cuadro \ref{tab:cuantiles_pema} muestra los cuantiles del número promedio de escaños mal asignados $PEMA$ para toda la cámara con distintos tamaños de muestra. Las medianas $q_{0.5}$ son de 0.818 para un tamaño de muestra de 320, de 0.636 para un tamaño de muestra de 1280, de 0.545 para un tamaño de muestra de 3200 en adelante. 
+
+Por otro lado, la Figura \ref{fig:mema} muestra las distribuciones muestrales del máximo número de escaños mal asignados $MEMA$ con distintos tamaños de muestra. Al aumentar el tamaño de muestra toda la distribución se mueve hacia la izquierda, lo que indica un menor error. Para 3,000 y 4,128 casillas la moda se situa en 10 escaños, para los tamaños de muestra de 6,000 y 7,128 la moda es de 9 y para 9,000 casillas la moda es de 8 casillas. Los cuantiles de estas distribuciones de muestreo se incluyen en el Cuadro \ref{tab:cuantiles_mema}. Prácticamente para tamaños de muestra de 7,128 y 9,000 no hay diferencias. 
+
+
+\hypertarget{caes-casillas}{%
+\subsection{Relación entre casillas por ARE y tamaño de muestra}}
+
+En el ejercicio electoral de 2018 se reporta un total de áreas de responsabilidad electoral (ARE) de XX,XXX con un total de casillas de XXX,XXX. En este caso, cada casilla es identificada a través de los campos Estado, Distrito Federal y Número de ARE de forma anidada. No obstante, las ARES continenen casillas que responden a una división operativa diferente a la de los distritos, por lo que para una sección puede haber más de una ARE. %Lo que no debería pasar es que tengamos una casilla en dos AREs.\footnote{El archivo 2018 tiene aproximadamente 90 de estas casuísticas donde una casilla pertenecea a más de una ARE.} 
+
+Para cada una de las 1,000 muestras simuladas se calcula la distribución de casillas por ARE y se promedian. Denotamos por $PCARE$ al número promedio de casillas en muestra que están asignadas a un ARE. Este indicador, para los distintos tamaños de muestra, se reporta en la Figura \ref{fig:ares}. Observamos que para los tamaños de muestra de 7,128 o menos, al menos 90\% de los AREs es muestra tienen una sola casilla, en cambio con muestras de 9,000 el porcentaje de AREs con una sola casilla disminuye a 88\%. Adicionalmente notamos que para muestras de 7,128 o 9,000 existen áreas con hasta 4 casillas. 
+
+
+\hypertarget{conclusión}{%
+\section{Conclusión}
+\label{conclusión}}
+
+Tomando en cuenta los resultados aquí presentados, los errores de estimación en la conformación de la cámara resumidos en los indicadores $PEMA$ y $MEMA$, sus distribuciones de muestreo varían muy poco con muestras de tamaño mayores o iguales a 1920. Adicionalmente, considerando las distribuciones del número de casillas por ARE, sugerimos que el tamaño de muestra para la estimación de la conformación de la cámara para el ejercicio electoral 2018 sea de 1280 casillas totales (40 casillas por entidad federal). 
+
+Consideramos que este tamaño de muestra es muy manejable por los capacitadores y asistentes electorales (CAEs), lo que se esperaría que la muestra final recolectada para hacer la estimación sea de casi el 100\%. 
+
+\bigskip 
+
+%\begin{table}[ht]
+%\centering
+%\begin{tabular}{cccccccc}
+%\toprule
+%Tamaño 	&	$q_{0.025}$	&	$q_{0.05}$	&	$q_{0.25}$	&	$q_{0.5}$	&	$q_{0.75}$	&	$q_{0.95}$	&	$q_{0.975}$	\\
+% de muestra& \\
+%\midrule
+%3000	&	8	&	10	&	14	&	17	&	21	&	27	&	30	\\
+%4128	&	8	&	8	&	12	&	14	&	18	&	24	&	26	\\
+%6000	&	6	&	7	&	10	&	13	&	15	&	22	&	25	\\
+%7128	&	7	&	8	&	10	&	12	&	15	&	20	&	23	\\
+%9000	&	6	&	7	&	9	&	12	&	14	&	17	&	19	\\
+%\bottomrule
+%\end{tabular}
+%\caption{Cuantiles de la distribución de muestreo de $NEMA$.}
+%\label{tab:cuantiles}
+%\end{table}
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{cccccccc}
+\toprule
+Tamaño & $q_{0.025}$ & $q_{0.05}$ & $q_{0.25}$ & $q_{0.5}$ & $q_{0.75}$ & $q_{0.95}$ & $q_{0.975}$\\
+de muestra & \\
+\midrule
+
+640 & 0.364 & 0.364 & 0.545 & 0.727 & 0.909 & 1.091 & 1.182\\
+
+1280 & 0.273 & 0.364 & 0.455 & 0.636 & 0.727 & 1.000 & 1.091\\
+
+1920 & 0.273 & 0.364 & 0.455 & 0.636 & 0.727 & 0.909 & 1.000\\
+
+2560 & 0.273 & 0.364 & 0.455 & 0.636 & 0.727 & 0.909 & 0.909\\
+
+3200 & 0.273 & 0.364 & 0.455 & 0.545 & 0.727 & 0.909 & 0.909\\
+
+\bottomrule
+\end{tabular}
+\caption{Cuantiles de la distribución de muestreo de $PEMA$.}
+\label{tab:cuantiles_pema}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{cccccccc}
+\toprule
+Tamaño & $q_{0.025}$ & $q_{0.05}$ & $q_{0.25}$ & $q_{0.5}$ & $q_{0.75}$ & $q_{0.95}$ & $q_{0.975}$\\
+de muestra & \\
+\midrule
+\hline
+
+640 & 3 & 4 & 4 & 5 & 6 & 7 & 8\\
+
+1280 & 3 & 3 & 4 & 4 & 5 & 6 & 7\\
+
+1920 & 3 & 3 & 3 & 4 & 4 & 5 & 6\\
+
+2560 & 3 & 3 & 3 & 4 & 4 & 5 & 6\\
+
+3200 & 2 & 3 & 3 & 4 & 4 & 5 & 5\\
+
+\bottomrule
+\end{tabular}
+\caption{Cuantiles de la distribución de muestreo de $MEMA$.}
+\label{tab:cuantiles_mema}
+\end{table}
+
+%\begin{table}[ht]
+%\centering
+%\begin{tabular}{cccccccc}
+%\toprule
+%Tamaño & $q_{0.025}$ & $q_{0.05}$ & $q_{0.25}$ & $q_{0.5}$ & $q_{0.75}$ & $q_{0.95}$ & $q_{0.975}$\\
+%de muestra&\\
+%\midrule
+%3000 & 1.000 & 1.000 & 1.014 & 1.029 & 1.047 & 1.073 & 1.083\\
+%4128 & 1.000 & 1.000 & 1.028 & 1.048 & 1.070 & 1.103 & 1.114\\
+%6000 & 1.000 & 1.011 & 1.042 & 1.066 & 1.093 & 1.133 & 1.146\\
+%7128 & 1.008 & 1.019 & 1.055 & 1.085 & 1.117 & 1.165 & 1.181\\
+%9000 & 1.010 & 1.025 & 1.068 & 1.103 & 1.143 & 1.198 & 1.217\\
+%\bottomrule
+%\end{tabular}
+%\caption{Cuantiles de la distribución de muestreo de $PCARE$.}
+%\label{tab:cuantiles_pcare}
+%\end{table}
+
+
+\newpage
+
+\begin{figure}[!htpb]
+  \centering
+      \includegraphics[width=\textwidth, height=0.50\textheight]{figs/senadores_detalle.png}
+      \caption{Resultados desglose}
+      \label{fig:resultados2018}
+\end{figure}
+
+\begin{figure}[!htpb]
+  \centering
+      \includegraphics[width=0.95\textwidth, height=\paperheight]{figs/NEMA_dist_partido.pdf}
+  \caption{Distribución de muestreo de $NEMA_j$ para los 10 partidos del 2018, por tamaño de muestra.}
+  \label{fig:nemaj}
+\end{figure}
+
+%\begin{figure}[!htpb]
+%  \centering
+%      \includegraphics[width=0.95\textwidth, height=\paperheight]{figs/NEMA_dist.pdf}
+%      \caption{Distribución de muestreo de $NEMA$ por tamaño de muestra.}
+%      \label{fig:nema}
+%\end{figure}
+
+\begin{figure}[!htpb]
+  \centering
+      \includegraphics[width=0.95\textwidth, height=\paperheight]{figs/PEMA_dist.pdf}
+      \caption{Distribución de muestreo de $PEMA$ por tamaño de muestra.}
+      \label{fig:pema}
+\end{figure}
+
+\begin{figure}[!htpb]
+  \centering
+      \includegraphics[width=0.95\textwidth, height=\paperheight]{figs/MEMA_dist.pdf}
+      \caption{Distribución de muestreo de $MEMA$ por tamaño de muestra.}
+      \label{fig:mema}
+\end{figure}
+
+\begin{figure}[!htpb]
+  \centering
+      \includegraphics[width=0.95\textwidth, height=\paperheight]{figs/violin_plot.pdf}
+      \caption{Distribución de muestreo de PEMA por tamaño de muestra para todos los partidos.}
+      \label{fig:pemall}
+\end{figure}
+
+%\begin{figure}[!htpb]
+%  \centering
+%      \includegraphics[width=0.95\textwidth, height=\paperheight]{figs/ARES_muestra.pdf}
+%  \caption{Distribución del número de casillas por ARE para cada tamaño de muestra.}
+%  \label{fig:ares}
+%\end{figure}
+
+
+\end{document}

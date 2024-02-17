@@ -2,12 +2,12 @@
 ## Febrero 2024 ##
 ## Este script genera cierto numero de muestras -- remesas a partir de un tamano de muestra ##
 
-library(tidyverse)
+suppressPackageStartupMessages(library(tidyverse))
 library(survival)
 
-setwd('~/Desktop/QuickCount/ConteoRapido2024/Senadores/')
+setwd('~/Desktop/quickcount/quickcount-2024/Senadores/')
 
-casillas<-read.csv2('SenaduriaMR2018Casilla_conDto2023.txt', sep = "|")
+casillas<-read.csv2('SenaduriaMR2018Casilla_conDto2023.txt', sep = "|") %>% filter(ID_DISTRITO!=0)
 
 #####
 
@@ -57,7 +57,7 @@ muestra<-casi_df %>%
           map(get_casillas) %>%
           reduce(rbind)
 
-filename<-sprintf('~/Desktop/QuickCount/ConteoRapido2024/Senadores/remesas/remesa_%s_%s.txt', n_muestra, file_id)
+filename<-sprintf('~/Desktop/quickcount/quickcount-2024/Senadores/remesas/remesa_%s_%s.txt', n_muestra, file_id)
 print(sprintf("Grabando %s", filename))
 write.table(x = muestra, file = filename, sep="|")
 }

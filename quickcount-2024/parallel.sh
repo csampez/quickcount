@@ -1,14 +1,14 @@
 #!/bin/bash/
 
-#cd ~/Desktop/QuickCount/ConteoRapido2024/
+#cd ~/Desktop/QuickCount/quickcount/quickcount-2024/
 #Script para ejecución en paralelo
 echo "Comienzan REMESAS" >> timely.txt
-date >> timely.tx
+date >> timely.txt
 seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 320 {}
-seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 640 {}
-seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 1280 {}
-seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 1920 {}
-seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 2560 {}
+# seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 640 {}
+# seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 1280 {}
+# seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 1920 {}
+# seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 2560 {}
 seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 3200 {}
 seq 1 1000 | parallel -j 10 Rscript genera_remesas.R 3840 {}
 
