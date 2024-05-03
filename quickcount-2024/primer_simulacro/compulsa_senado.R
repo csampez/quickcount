@@ -4,23 +4,22 @@
 ##########  SENADORES   ########## 
 ##################################
 ##################################
-times<-c('1406','1415','1420','1425')
+
+library(tidyverse)
 
 compulsator<-function(time){
   
   pps<-c("PAN","PRI","PRD","PT","PVEM","MC","MORENA")
-  
-  path<-"~/Desktop/quickcount/quickcount-2024/primer_simulacro/"
-  
-  setwd(path)
+  path<-"~/Desktop/quickcount/quickcount-2024/primer_simulacro/simba/"
+  #setwd("~/Desktop/quickcount/quickcount-2024/primer_simulacro/")
   
   bzn_cmp_sen<-"buzon_senadores_compulsado"
   equipo_dir<-"equipo4compartida"
   
   id<-sprintf("050025%s",time)
   
-  info<-read.csv("../informacion_2024/Info_estados_2024.csv")
-  table_remesa<-paste("simba/senadores","/REMESAS",as.character(id),".txt",sep="")
+  info<-read.csv("informacion/Info_estados_2024.csv")
+  table_remesa<-sprintf("%s/senadores/REMESAS%s.txt",path,as.character(id))
   
   remesa<-read.table(table_remesa,header=TRUE,skip=1,sep="|")
   c0<-nrow(remesa)
@@ -33,12 +32,14 @@ compulsator<-function(time){
     select(ID_ESTADO) %>%
     unique() %>% pull() %>% length()
   
-  rdz.p <- read.csv(paste("simba/buzon_senadores_compulsado/rodriguez5025",time,".csv",sep = "")) 
-  rdz.d <- read.csv(paste("./simba/buzon_senadores_compulsado/rodriguezsen5025",time,".csv",sep = ""))
-  
-  cot.p <- read.csv(paste("simba/buzon_senadores_compulsado/nieto5025",time,".csv",sep = "")) 
-  cot.d <- read.csv(paste("./simba/buzon_senadores_compulsado/nietosen5025",time,".csv",sep = ""))
-  #eq.dip <- read.csv(paste("./simba/buzon_senadores_compulsado/nietosen5025",times[3],".csv",sep = ""))
+  rdz.p <- read.csv(sprintf("%s/buzon_senadores_compulsado/rodriguez5025%s.csv",path,time)) 
+  rdz.d <- read.csv(sprintf("%s/buzon_senadores_compulsado/rodriguezsen5025%s.csv",path,time))
+
+  cot.p <- read.csv(sprintf("%s/buzon_senadores_compulsado/nieto5025%s.csv",path,time)) 
+  cot.d <- read.csv(sprintf("%s/buzon_senadores_compulsado/nietosen5025%s.csv",path,time))
+
+  # eq.p <- read.csv(sprintf("%s/buzon_senadores_compulsado/equipsen%s.csv",path,time))
+  # eq.d <- read.csv(sprintf("%s/buzon_senadores_compulsado/equipsen%s.csv",path,time))
   
   precomp<-rbind(cot.p , rdz.p) %>%
     select(-EQ,-R, -EN)
@@ -62,7 +63,7 @@ compulsator<-function(time){
   
   comp %>% select(EQ,EN,R,PAN,PRI,PRD,PT,PVEM,MC,MORENA,
                   PART,LMU,ESTRATOS,EST_REC,TOT_CAS,CAS_REC,PORCENTAJE) %>%
-    write.csv(sprintf('./simba/buzon_senadores_compulsado/compulsado50%s.csv', substr(id,5,10)), row.names = F)
+    write.csv(sprintf('%s/buzon_senadores_compulsado/compulsado50%s.csv',path, substr(id,5,10)), row.names = F)
   
   ### COMPULSADO SENADURIAS
   
@@ -78,9 +79,11 @@ compulsator<-function(time){
     R = substr(id,5,10))
   
   comp %>% select(EQ,EN,R,PAN,PRI,PRD,PT,PVEM,MC,MORENA,LMU) %>%
-    write.csv(sprintf('./simba/buzon_senadores_compulsado/compulsadosen50%s.csv', substr(id,5,10)), row.names = F)
+    write.csv(sprintf('%s/buzon_senadores_compulsado/compulsadosen50%s.csv',path, substr(id,5,10)), row.names = F)
   
 }
+
+times<-c('1406','1415','1420','1425')
 
 times %>% map(compulsator)
 
