@@ -1,0 +1,301 @@
+ID_ESTADO,ENTIDAD,ID_DISTRITO,PAN,PRI,PRD,PVEM,PT,MORENA
+1,Aguascalientes,1,0,1,0,1,0,0
+1,Aguascalientes,2,1,0,0,0,0,1
+1,Aguascalientes,3,0,0,0,0,0,1
+2,Baja California,1,1,0,0,0,0,0
+2,Baja California,2,1,0,0,0,0,0
+2,Baja California,3,0,0,1,0,0,0
+2,Baja California,4,0,0,1,0,0,0
+2,Baja California,5,1,0,0,0,0,0
+2,Baja California,6,0,1,0,0,0,0
+2,Baja California,7,0,1,0,0,0,0
+2,Baja California,8,1,0,0,1,0,0
+2,Baja California,9,0,1,0,0,0,0
+3,Baja California Sur,1,1,0,0,1,0,0
+3,Baja California Sur,2,1,0,0,0,1,0
+4,Campeche,1,0,1,0,0,0,1
+4,Campeche,2,0,0,1,0,0,1
+5,Coahuila,1,0,1,0,0,1,0
+5,Coahuila,2,0,1,0,0,0,1
+5,Coahuila,3,1,0,0,0,1,0
+5,Coahuila,4,0,1,0,0,1,0
+5,Coahuila,5,1,0,0,1,0,0
+5,Coahuila,6,0,1,0,0,0,1
+5,Coahuila,7,0,1,0,0,0,1
+5,Coahuila,8,0,0,1,1,0,0
+6,Colima,1,1,0,0,0,0,1
+6,Colima,2,0,1,0,0,0,1
+7,Chiapas,1,0,0,1,0,1,0
+7,Chiapas,2,0,1,0,0,0,1
+7,Chiapas,3,0,0,1,0,0,1
+7,Chiapas,4,0,0,1,0,0,1
+7,Chiapas,5,0,1,0,0,0,1
+7,Chiapas,6,0,0,1,0,0,1
+7,Chiapas,7,0,1,0,0,0,0
+7,Chiapas,8,0,1,0,0,1,0
+7,Chiapas,9,1,0,0,0,0,1
+7,Chiapas,10,0,0,1,1,0,0
+7,Chiapas,11,0,0,1,1,0,0
+7,Chiapas,12,0,0,1,0,0,0
+7,Chiapas,13,0,1,0,1,0,0
+8,Chihuahua,1,0,0,1,0,0,1
+8,Chihuahua,2,0,1,0,0,0,1
+8,Chihuahua,3,0,1,0,0,1,0
+8,Chihuahua,4,1,0,0,1,0,0
+8,Chihuahua,5,1,0,0,0,0,1
+8,Chihuahua,6,1,0,0,0,0,1
+8,Chihuahua,7,1,0,0,0,1,0
+8,Chihuahua,8,0,1,0,1,0,0
+8,Chihuahua,9,0,1,0,1,0,0
+9,Ciudad de México,1,1,0,0,0,0,1
+9,Ciudad de México,2,0,1,0,0,1,0
+9,Ciudad de México,3,1,0,0,0,0,1
+9,Ciudad de México,4,1,0,0,0,0,1
+9,Ciudad de México,5,0,1,0,0,0,1
+9,Ciudad de México,6,1,0,0,0,0,1
+9,Ciudad de México,7,0,0,1,0,0,1
+9,Ciudad de México,8,1,0,0,1,0,0
+9,Ciudad de México,9,0,1,0,0,0,1
+9,Ciudad de México,10,1,0,0,0,0,1
+9,Ciudad de México,11,0,0,1,0,0,1
+9,Ciudad de México,12,0,0,1,0,0,1
+9,Ciudad de México,13,0,0,1,0,0,1
+9,Ciudad de México,14,0,0,1,0,0,1
+9,Ciudad de México,15,1,0,0,1,0,0
+9,Ciudad de México,16,0,1,0,0,0,1
+9,Ciudad de México,17,1,0,0,1,0,0
+9,Ciudad de México,18,0,0,1,0,0,1
+9,Ciudad de México,19,1,0,0,1,0,0
+9,Ciudad de México,20,0,0,1,0,1,0
+9,Ciudad de México,21,0,1,0,0,0,1
+9,Ciudad de México,22,0,0,1,0,0,1
+10,Durango,1,1,0,0,0,0,1
+10,Durango,2,0,1,0,0,1,0
+10,Durango,3,0,0,1,1,0,0
+10,Durango,4,1,0,0,0,1,0
+11,Guanajuato,1,0,1,0,0,1,0
+11,Guanajuato,2,1,0,0,0,0,1
+11,Guanajuato,3,1,0,0,1,0,0
+11,Guanajuato,4,0,0,0,0,0,1
+11,Guanajuato,5,1,0,0,1,0,0
+11,Guanajuato,6,0,0,0,0,0,1
+11,Guanajuato,7,1,0,0,1,0,0
+11,Guanajuato,8,0,0,1,0,0,1
+11,Guanajuato,9,1,0,0,1,0,0
+11,Guanajuato,10,1,0,0,0,0,1
+11,Guanajuato,11,0,0,0,0,0,1
+11,Guanajuato,12,1,0,0,0,0,1
+11,Guanajuato,13,0,1,0,0,0,1
+11,Guanajuato,14,1,0,0,0,0,1
+11,Guanajuato,15,1,0,0,0,0,1
+12,Guerrero,1,0,1,0,0,0,1
+12,Guerrero,2,0,0,1,0,0,1
+12,Guerrero,3,0,0,1,1,0,0
+12,Guerrero,4,0,0,1,0,0,1
+12,Guerrero,5,0,0,1,0,1,0
+12,Guerrero,6,0,1,0,1,0,0
+12,Guerrero,7,1,0,0,0,0,1
+12,Guerrero,8,0,1,0,1,0,0
+13,Hidalgo,1,0,1,0,0,0,0
+13,Hidalgo,2,0,0,1,1,0,0
+13,Hidalgo,3,0,0,1,0,0,0
+13,Hidalgo,4,0,1,0,0,0,0
+13,Hidalgo,5,1,0,0,0,0,0
+13,Hidalgo,6,0,1,0,0,0,0
+13,Hidalgo,7,0,1,0,0,0,0
+14,Jalisco,1,1,0,0,0,1,0
+14,Jalisco,2,1,0,0,0,0,1
+14,Jalisco,3,1,0,0,0,0,0
+14,Jalisco,4,0,1,0,0,0,1
+14,Jalisco,5,0,1,0,0,0,0
+14,Jalisco,6,1,0,0,0,0,1
+14,Jalisco,7,0,1,0,0,0,1
+14,Jalisco,8,1,0,0,0,1,0
+14,Jalisco,9,0,1,0,0,0,1
+14,Jalisco,10,1,0,0,1,0,0
+14,Jalisco,11,0,1,0,0,0,1
+14,Jalisco,12,0,0,1,0,0,1
+14,Jalisco,13,0,1,0,0,1,0
+14,Jalisco,14,0,0,1,1,0,0
+14,Jalisco,15,1,0,0,0,0,1
+14,Jalisco,16,1,0,0,0,0,1
+14,Jalisco,17,1,0,0,1,0,0
+14,Jalisco,18,0,1,0,0,0,1
+14,Jalisco,19,0,1,0,0,0,1
+14,Jalisco,20,1,0,0,0,0,1
+15,México,1,0,1,0,1,0,0
+15,México,2,0,0,1,0,1,0
+15,México,3,0,1,0,0,1,0
+15,México,4,1,0,0,0,0,1
+15,México,5,1,0,0,0,1,0
+15,México,6,1,0,0,0,0,1
+15,México,7,1,0,0,0,0,1
+15,México,8,0,1,0,0,0,1
+15,México,9,0,1,0,1,0,0
+15,México,10,0,1,0,0,0,1
+15,México,11,0,0,1,0,0,0
+15,México,12,0,1,0,0,0,1
+15,México,13,1,0,0,0,0,0
+15,México,14,0,1,0,0,0,1
+15,México,15,1,0,0,0,0,1
+15,México,16,0,1,0,0,1,0
+15,México,17,0,1,0,0,0,0
+15,México,18,1,0,0,1,0,0
+15,México,19,1,0,0,0,0,1
+15,México,20,0,1,0,1,0,0
+15,México,21,0,0,1,0,0,1
+15,México,22,1,0,0,0,0,1
+15,México,23,0,1,0,1,0,0
+15,México,24,1,0,0,1,0,0
+15,México,25,0,0,0,0,0,1
+15,México,26,0,1,0,1,0,0
+15,México,27,0,1,0,0,1,0
+15,México,28,0,0,1,0,0,1
+15,México,29,0,0,1,0,0,0
+15,México,30,0,1,0,0,0,1
+15,México,31,0,0,1,0,0,0
+15,México,32,0,0,0,0,1,0
+15,México,33,0,1,0,0,0,0
+15,México,34,1,0,0,0,0,1
+15,México,35,1,0,0,0,0,1
+15,México,36,0,1,0,0,0,1
+15,México,37,1,0,0,0,0,1
+15,México,38,0,0,1,1,0,0
+15,México,39,0,1,0,0,1,0
+15,México,40,1,0,0,1,0,0
+16,Michoacán,1,0,1,0,0,0,0
+16,Michoacán,2,0,0,1,0,0,1
+16,Michoacán,3,0,0,1,0,1,0
+16,Michoacán,4,1,0,0,0,0,1
+16,Michoacán,5,1,0,0,0,0,1
+16,Michoacán,6,0,1,0,0,1,0
+16,Michoacán,7,0,0,1,0,0,1
+16,Michoacán,8,0,1,0,1,0,0
+16,Michoacán,9,1,0,0,1,0,0
+16,Michoacán,10,1,0,0,0,0,1
+16,Michoacán,11,0,0,1,0,1,0
+17,Morelos,1,1,0,0,0,0,1
+17,Morelos,2,1,0,0,0,0,1
+17,Morelos,3,0,0,1,1,0,0
+17,Morelos,4,0,0,1,0,0,1
+17,Morelos,5,0,1,0,0,0,1
+18,Nayarit,1,0,1,0,0,0,1
+18,Nayarit,2,0,0,1,0,0,1
+18,Nayarit,3,1,0,0,0,1,0
+19,Nuevo León,1,1,0,0,1,0,0
+19,Nuevo León,2,0,1,0,0,0,1
+19,Nuevo León,3,1,0,0,0,1,0
+19,Nuevo León,4,1,0,0,0,0,1
+19,Nuevo León,5,0,1,0,0,1,0
+19,Nuevo León,6,1,0,0,0,1,0
+19,Nuevo León,7,0,0,1,1,0,0
+19,Nuevo León,8,0,1,0,0,0,1
+19,Nuevo León,9,0,1,0,0,1,0
+19,Nuevo León,10,0,1,0,0,0,1
+19,Nuevo León,11,1,0,0,0,0,1
+19,Nuevo León,12,0,1,0,1,0,0
+19,Nuevo León,13,1,0,0,1,0,0
+19,Nuevo León,14,1,0,0,0,1,0
+20,Oaxaca,1,0,1,0,0,0,1
+20,Oaxaca,2,0,0,1,0,0,1
+20,Oaxaca,3,1,0,0,0,1,0
+20,Oaxaca,4,0,1,0,0,0,0
+20,Oaxaca,5,1,0,0,0,0,0
+20,Oaxaca,6,0,1,0,0,1,0
+20,Oaxaca,7,0,1,0,1,0,0
+20,Oaxaca,8,0,1,0,1,0,0
+20,Oaxaca,9,0,0,1,1,0,0
+20,Oaxaca,10,1,0,0,0,0,0
+21,Puebla,1,0,1,0,0,0,1
+21,Puebla,2,0,1,0,1,0,0
+21,Puebla,3,0,1,0,0,0,1
+21,Puebla,4,0,1,0,0,0,1
+21,Puebla,5,0,0,1,0,0,1
+21,Puebla,6,0,0,1,0,0,1
+21,Puebla,7,0,0,1,0,0,1
+21,Puebla,8,0,1,0,0,0,1
+21,Puebla,9,1,0,0,1,0,0
+21,Puebla,10,1,0,0,0,0,1
+21,Puebla,11,0,1,0,0,1,0
+21,Puebla,12,1,0,0,0,1,0
+21,Puebla,13,1,0,0,0,0,1
+21,Puebla,14,0,1,0,0,0,1
+21,Puebla,15,1,0,0,0,0,1
+21,Puebla,16,0,0,1,1,0,0
+22,Querétaro,1,0,1,0,0,0,1
+22,Querétaro,2,1,0,0,1,0,0
+22,Querétaro,3,1,0,0,0,0,0
+22,Querétaro,4,1,0,0,0,0,0
+22,Querétaro,5,0,1,0,0,0,1
+22,Querétaro,6,1,0,0,0,0,1
+23,Quintana Roo,1,0,0,1,1,0,0
+23,Quintana Roo,2,0,1,0,0,0,1
+23,Quintana Roo,3,0,1,0,0,0,0
+23,Quintana Roo,4,0,0,1,0,0,1
+24,San Luis Potosí,1,0,1,0,0,0,1
+24,San Luis Potosí,2,0,0,1,1,0,0
+24,San Luis Potosí,3,0,1,0,1,0,0
+24,San Luis Potosí,4,0,0,1,0,0,1
+24,San Luis Potosí,5,1,0,0,1,0,0
+24,San Luis Potosí,6,0,1,0,1,0,0
+24,San Luis Potosí,7,1,0,0,0,0,1
+25,Sinaloa,1,1,0,0,1,0,0
+25,Sinaloa,2,1,0,0,0,0,0
+25,Sinaloa,3,0,1,0,0,1,0
+25,Sinaloa,4,0,0,1,1,0,0
+25,Sinaloa,5,1,0,0,0,0,1
+25,Sinaloa,6,0,1,0,0,0,0
+25,Sinaloa,7,0,1,0,0,0,1
+26,Sonora,1,1,0,0,0,0,1
+26,Sonora,2,0,1,0,0,0,1
+26,Sonora,3,1,0,0,0,1,0
+26,Sonora,4,0,0,1,0,1,0
+26,Sonora,5,0,1,0,0,0,1
+26,Sonora,6,1,0,0,1,0,0
+26,Sonora,7,0,1,0,0,0,1
+27,Tabasco,1,0,0,1,0,0,0
+27,Tabasco,2,0,0,1,0,0,0
+27,Tabasco,3,0,0,1,0,0,0
+27,Tabasco,4,0,1,0,0,0,0
+27,Tabasco,5,0,0,1,0,0,0
+27,Tabasco,6,0,1,0,0,0,0
+28,Tamaulipas,1,1,0,0,1,0,0
+28,Tamaulipas,2,1,0,0,0,0,1
+28,Tamaulipas,3,0,1,0,1,0,0
+28,Tamaulipas,4,0,0,1,1,0,0
+28,Tamaulipas,5,0,1,0,1,0,0
+28,Tamaulipas,6,1,0,0,0,0,1
+28,Tamaulipas,7,0,1,0,0,0,1
+28,Tamaulipas,8,1,0,0,0,1,0
+29,Tlaxcala,1,1,0,0,0,1,0
+29,Tlaxcala,2,0,1,0,1,0,0
+29,Tlaxcala,3,0,0,1,0,1,0
+30,Veracruz,1,1,0,0,1,0,0
+30,Veracruz,2,0,0,1,1,0,0
+30,Veracruz,3,0,1,0,1,0,0
+30,Veracruz,4,1,0,0,0,0,1
+30,Veracruz,5,0,0,1,0,0,1
+30,Veracruz,6,0,0,1,0,0,1
+30,Veracruz,7,1,0,0,0,0,1
+30,Veracruz,8,1,0,0,0,0,0
+30,Veracruz,9,0,1,0,0,1,0
+30,Veracruz,10,0,1,0,0,0,1
+30,Veracruz,11,0,1,0,0,0,1
+30,Veracruz,12,1,0,0,0,0,1
+30,Veracruz,13,1,0,0,1,0,0
+30,Veracruz,14,0,0,1,0,0,1
+30,Veracruz,15,0,1,0,0,0,1
+30,Veracruz,16,1,0,0,0,0,1
+30,Veracruz,17,1,0,0,0,0,1
+30,Veracruz,18,0,0,1,1,0,0
+30,Veracruz,19,0,0,1,0,0,1
+31,Yucatán,1,1,0,0,0,0,1
+31,Yucatán,2,1,0,0,1,0,0
+31,Yucatán,3,0,1,0,0,0,1
+31,Yucatán,4,1,0,0,0,0,1
+31,Yucatán,5,0,1,0,1,0,0
+31,Yucatán,6,1,0,0,0,0,1
+32,Zacatecas,1,0,1,0,0,0,1
+32,Zacatecas,2,1,0,0,1,0,0
+32,Zacatecas,3,0,0,1,0,1,0
+32,Zacatecas,4,0,1,0,0,1,0
