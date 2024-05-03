@@ -41,7 +41,7 @@ partidos<-c(partido, "NOVOTO","PART")
 np<-length(partidos)
 
 #-Archivos de entrada-
-info<-read.csv("../informacion_2024/Info_distritos_2024.csv")
+info<-read.csv("informacion/Info_distritos_2024.csv")
 lnest<-info$LISTA_NOMINAL
 LNN<-sum(lnest)
 #c1<-scan(paste(dir,"remesas_2024/REMESAS",id,".txt",sep=""),n=1)
@@ -152,7 +152,7 @@ if(c1>0){
       
       print("Realizando Posestratificacion")
       
-      conglomerados<-read.csv("../informacion_2024/cluster_catalog_diputados.csv") 
+      conglomerados<-read.csv("informacion/cluster_catalog_diputados.csv") 
 
       nc <- c(1,5,10,20,30,50,100,200,300)
       
@@ -336,7 +336,7 @@ if(c1>0){
     ###############################
     ### Informacion coaliciones ###
     
-    coa<-read.csv("../informacion_2024/2024_Diputados_Coaliciones.csv")
+    coa<-read.csv("informacion/2024_Diputados_Coaliciones.csv")
     #np<-13
     #Asignacion de diputados por mayoria relativa
     pid<-matrix(NA,nrow=ss,ncol=nest)

@@ -41,7 +41,7 @@ get_estimates_sen<-function(remesa_name, remesa_path, output_path){
   
   #-Archivos de entrada-
   ## Lista Nominal 
-  info<-read.csv("../informacion_2024/Info_estados_2024.csv")
+  info<-read.csv("informacion/Info_estados_2024.csv")
   lnest<-info$LISTA_NOMINAL
   lnn<-sum(lnest)
   
@@ -140,7 +140,7 @@ get_estimates_sen<-function(remesa_name, remesa_path, output_path){
       
       print("Realizando Posestratificacion")
       
-      conglomerados<-read.csv("./informacion_2018/cluster_catalog_senadores_2018.csv") 
+      conglomerados<-read.csv("./informacion/cluster_catalog_senadores_2018.csv") 
       nc <-  c(1,3,5,10,15,20,25,32)
       
       # Para cada configuracion (catalogo)
@@ -323,8 +323,8 @@ get_estimates_sen<-function(remesa_name, remesa_path, output_path){
     ###############################
     ### Informacion coaliciones ###
     
-    coa1<-read.csv("../informacion_2024/coalicion2024_1a.csv")
-    coa2<-read.csv("../informacion_2024/coalicion2024_2a.csv")
+    coa1<-read.csv("./informacion/coalicion2024_1a.csv")
+    coa2<-read.csv("./informacion/coalicion2024_2a.csv")
     
     np<-length(partidos)
     
