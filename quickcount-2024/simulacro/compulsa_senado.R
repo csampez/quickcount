@@ -141,7 +141,7 @@ while(TRUE){
   t2s<-dir("U://") %>% substr(18,21) 
   
   #setdiff(t1s,t2s) %>% map(compulsator)
-  t1s %>% map(compulsator)
+  t1s %>% sort(decreasing=TRUE) %>% map(compulsator)
   Sys.sleep(10)
 }
 

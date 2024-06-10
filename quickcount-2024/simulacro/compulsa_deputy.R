@@ -179,7 +179,7 @@ t2s<-dir("Y://") %>% substr(17,20)
 #    compulsator(t)
 # }
 setdiff(t1s,t2s) %>% map(compulsator)
-t1s %>% map(compulsator)
+t1s %>% sort(decreasing=TRUE) %>% map(compulsator)
 Sys.sleep(10)
 }
 
